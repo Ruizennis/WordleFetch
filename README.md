@@ -5,6 +5,7 @@
 
 ### Clone the repository
 ```bash
+apt install git
 git clone https://github.com/WordleFetch
 cd WordleFetch
 ```
