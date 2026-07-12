@@ -19,8 +19,11 @@ python Run.py
 ```
 
 ### Optional, Enable alias 
-run the setup.sh script so you can type wordle anywhere to run the python script
+Open your bashrc file
 ```bash
-chmod +x Setup.sh
-./Setup.sh
+nano ~/.bashrc
+```
+Add this to your .bashrc file so you can type wordle from anywhere and easily run the script.
+```bash
+alias wordle="cd pathtopythonfile&&python run.py
 ```
