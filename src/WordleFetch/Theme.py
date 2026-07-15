@@ -1,0 +1,7 @@
+# Themeing
+COLOR_INFO = "\033[1;33m"
+COLOR_CONTENT = "\033[1;32m"
+COLOR_ERROR = "\033[1;31m"
+COLOR_HEADER = "\033[1;38;2;255;165;0m"
+# Dont change this
+ANSI_RESET = "\033[0m"

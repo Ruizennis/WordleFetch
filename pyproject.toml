@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "WordleFetch"
+version = "1.0.0"
+description = "Fetch and display Wordle data from the NYT."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: POSIX :: Linux",
+    "Environment :: Console",
+    "Topic :: Utilities"
+]
+
+[project.urls]
+Homepage = "https://github.com/Ruizennis/WordleFetch"
+Issues = "https://github.com/Ruizennis/TermuxC/issues"
+
+[project.scripts]
+wordlefetch = "WordleFetch.Cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+

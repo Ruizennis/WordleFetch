@@ -1,29 +1,56 @@
 # WordleFetch
-## A simple way to get information on todays wordle
+## Get the answers you want
 
-## Setup
 
-### Clone the repository
+Default output when only running the command:
 ```bash
-apt install git
-git clone https://github.com/WordleFetch
-cd WordleFetch
+$ wordlefetch
 ```
-### Install rich
+```text
+- Todays Wordle -
+Answer • pshaw
+Date • 2026-07-15
+Editor • Tracy Bennett
+```
+Example of using flags to customise the output:
 ```bash
-pip install rich
+$ wordlefetch -H -A -D -H
 ```
-### Run the python file
-```python
-python Run.py
+```text
+- Todays Wordle -
+Answer • pshaw
+Date • 2026-07-15
+- Todays Wordle -
 ```
 
-### Optional, Enable alias 
-Open your bashrc file
-```bash
-nano ~/.bashrc
-```
-Add this to your .bashrc file so you can type wordle from anywhere and easily run the script.
-```bash
-alias wordle="cd pathtopythonfile&&python run.py
-```
+## Display Flags
+These flags control which information is displayed in the output and can be used more than once.
+
+| Flag | Long Form | Description |
+| :--- | :--- | :--- |
+| -H | --header | Adds showing the header. |
+| -A | --answer | Adds showing the Wordle answer. |
+| -D | --date-display | Adds showing the date. |
+| -E | --editor | Adds showing the Wordle editor. |
+| -I | --id | Adds showing the Wordle ID. |
+| -L | --launch | Adds showing days since Wordle launch. |
+
+### Advanced Configuration & Miscellaneous Flags
+
+| Flag | Long Form | Description |
+| :--- | :--- | :--- |
+| -u | --url | Allows using a different URL instead of the default URL. |
+| -d | --customdate | Allows using a different date instead of today's date. |
+| -V | --version | Shows installed WordleFetch package version and exits. |
+
+
+
+## Links
+[PyPi - WordleFetch](https://pypi.org/project/WordleFetch/)
+
+
+
+
+---
+
+# This project is licensed under the MIT license, see [LICENSE](LICENSE)
