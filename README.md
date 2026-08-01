@@ -39,9 +39,9 @@ These flags control which information is displayed in the output and can be used
 
 | Flag | Long Form | Description |
 | :--- | :--- | :--- |
-| -u | --url | Allows using a different URL instead of the default URL. |
-| -d | --customdate | Allows using a different date instead of today's date. |
-| -V | --version | Shows installed WordleFetch package version and exits. |
+| -u | --url | Allows fetching data from a separate API endpoint |
+| -d | --customdate | Allows fetching a different date instead of today's date |
+| -V | --version | Shows installed WordleFetch package version and exits |
 
 
 
